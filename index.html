@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flores para ti | Robert Jesus</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"><span></span><span></span><span></span></div>
+  <main class="site-shell">
+    <nav class="topbar" aria-label="Navegación principal">
+      <a class="brand" href="#inicio"><span class="brand-mark">✽</span><span>para ti, siempre</span></a>
+      <div class="topbar-note"><span class="live-dot"></span> una página hecha con amor</div>
+      <div class="signature-mini">Robert Jesus <span>♥</span></div>
+    </nav>
+
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> 21 de septiembre · flores amarillas</p>
+        <h1>Para la persona que hace <em>florecer</em> mis días.</h1>
+        <div class="hero-actions">
+          <button class="primary-button" id="reveal-bouquet" type="button"><span>✦</span> Abre mi sorpresa</button>
+          <button class="letters-launch hero-letters-button" id="open-letters" type="button"><span class="envelope-icon">✉</span><span><strong>Abrir mis cartas</strong><small>Amor y amistad</small></span><b>↗</b></button>
+        </div>
+        <div class="hero-detail"><span class="detail-line"></span><p><strong>Atte: Robert Jesus</strong></p></div>
+      </div>
+
+      <div class="hero-art" id="hero-art" aria-label="Escena animada con un ramo de girasoles">
+        <div class="art-label">un ramo para ti <span>✦</span></div>
+        <div class="stars" id="stars" aria-hidden="true"></div>
+        <div class="petal-field" id="petal-field" aria-hidden="true"></div>
+        <div class="petal-spiral" id="petal-spiral" aria-hidden="true"></div>
+        <div class="floating-words" aria-hidden="true">
+          <span>Te Quiero</span><span>Siempre juntos</span><span>Flores para ti</span><span>Mi persona favorita</span><span>Bella</span><span>Sonríe siempre</span><span>Para ti</span><span>Mi vida</span><span>Mi niña</span><span>Con mucho cariño</span>
+        </div>
+        <div class="bouquet bouquet-hidden" id="bouquet">
+          <div class="bouquet-glow"></div>
+          <div class="flower-bed" id="flower-bed"></div>
+          <div class="bouquet-paper" aria-hidden="true"><span></span><b>para ti</b></div>
+          <div class="bouquet-ribbon" aria-hidden="true">♥</div>
+        </div>
+        <div class="art-caption"><span class="caption-line"></span><span>que nunca te falten motivos para sonreír</span><span class="caption-line"></span></div>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="letter-modal" id="letter-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <section class="modal-card">
+      <button class="modal-close" id="close-modal" type="button" aria-label="Cerrar carta">×</button>
+      <span class="modal-kicker" id="modal-kicker">carta de amor</span>
+      <div class="letter-types" role="group" aria-label="Tipo de cartas"><button class="type-active" type="button" data-letter-kind="amor">Amor</button><button type="button" data-letter-kind="amistad">Amistad</button></div>
+      <h2 id="modal-title">Para ti</h2>
+      <p id="modal-copy"></p>
+      <div class="modal-signature">Con cariño,<br><strong>Robert Jesus</strong> <span>♥</span></div>
+      <div class="modal-flower" aria-hidden="true">✽</div>
+      <div class="letter-slider-controls"><button id="previous-letter" type="button" aria-label="Carta anterior">←</button><div class="letter-dots" id="letter-dots" aria-label="Seleccionar carta"></div><button id="next-letter" type="button" aria-label="Carta siguiente">→</button></div>
+    </section>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>
